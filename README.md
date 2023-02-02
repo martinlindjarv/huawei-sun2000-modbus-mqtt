@@ -36,7 +36,10 @@ Once the docker image has been generated, you can use the following docker-compo
     restart: unless-stopped
     image: huawei-solar:latest
     environment:
-      - INVERTER_IP=XXX.XXX.XXX.XXX
+      - INVERTER_IP=xxx.xxx.xxx.xxx
+      - MQTT_HOST=xxx.xxx.xxx.xxx
+      - MQTT_USERNAME=''
+      - MQTT_PASSWORD=''
 ```
 
 *Docker container*
